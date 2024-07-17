@@ -181,6 +181,19 @@ body.nav-active {
   width: 100%;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.grid-list {
+  display: grid;
+  gap: 50px;
+}
+
+.section-text {
+  margin-block: 15px 50px;
+}
+
 /* Header */
 .header-action {
   display: none;
@@ -322,4 +335,38 @@ body.nav-active {
 
 .hero .shape {
   display: none;
+}
+
+/* Process */
+.process {
+    position: relative;
+    z-index: 1;
+}
+
+.process::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/process-bg.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.process-banner {
+    display: none;
+}
+
+.process-item .item-title {
+    margin-block: 20px 10px;
+}
+
+.process-item .item-icon {
+    margin-inline: auto;
+    filter: var(--shadow-1);
 }
