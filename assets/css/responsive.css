@@ -117,6 +117,10 @@
     bottom: -20px;
     left: 80px;
   }
+
+  .footer-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Larger than 1024px */
