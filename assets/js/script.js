@@ -36,12 +36,12 @@ window.onscroll = () => {
 const parallaxElements = document.querySelectorAll("[data-parallax]");
 
 window.onmousemove = (event) => {
-    for (let i = 0 ; i < parallaxElements.length ; i++) {
+    for (let i = 0; i < parallaxElements.length; i++) {
         const movementX = (event.clientX / window.innerWidth) * Number(parallaxElements[i].dataset.parallaxSpeed);
         const movementY = (event.clientY / window.innerHeight) * Number(parallaxElements[i].dataset.parallaxSpeed);
 
         parallaxElements[i].animate({
             transform: `translate(${movementX}px, ${movementY}px)`
-        }, {duration: 500, fill: "forwards"});
+        }, { duration: 500, fill: "forwards" });
     }
-} 
+}
